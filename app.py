@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 app = FastAPI(title="Bank Loan Defaulter API")
 
 # Task 1-4: Load train, target=DEFAULTER, drop SN, 500 trees
-train = pd.read_csv("BANK_LOAN.csv")
+train = pd.read_csv("BANK LOAN.csv")
 FEATURES = ['AGE', 'EMPLOY', 'ADDRESS', 'DEBTINC', 'CREDDEBT', 'OTHDEBT']
 X_train = train[FEATURES]
 y_train = train['DEFAULTER']
